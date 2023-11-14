@@ -151,8 +151,10 @@ input{
 }
 
 #footer-btn{
-    margin-left: 22%;
+    display: flex;
     margin-top: 40%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #00ff00;
     box-shadow: #00ff00 4px 4px 4px;
     color: white;
@@ -215,7 +217,6 @@ input{
     }   
 
     #footer-btn{
-        margin-left: 23%;
         font-size: 20px;       
     }
 
