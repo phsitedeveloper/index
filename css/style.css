@@ -32,6 +32,25 @@ header{
     margin-bottom: auto;
     margin-left: auto;
     margin-right: 9%;
+    transition: transform 0.5s ease-in-out; /* Adiciona uma transição suave para a propriedade transform */
+    animation: pulse 1s infinite; /* Adiciona uma animação para pulsar a cada 1 segundo */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#message{
+    margin-top: 15%;
+    display: grid;    
+    place-items: center;
+}
+
+#textarea{
+    background-color: #252525;
+    color: white;
+    font-family: Gagalin-Regular;
 }
 
 section{
@@ -91,9 +110,10 @@ section{
 
 footer{
     background-color: #000;
-    padding: 3%;
+    padding-top: 3%;
     color: white;
-    height: 600px;
+    height: 1000px;
+    max-width: 100%;
 }
 
 #form{
@@ -125,7 +145,9 @@ input{
     background-color: #252525;
     border: 1px solid white;
     border-radius: 4px;
-    width: auto;
+    width: 100%;
+    color: white;
+    font-family: Gagalin-Regular;
 }
 
 #footer-btn{
@@ -147,6 +169,7 @@ input{
     #logo{
         width: 30%;
     }   
+
 }
 
 @media screen and (max-width:565px) {
@@ -181,22 +204,52 @@ input{
     #contato-cabecalho{
         margin-right: 2%;
     }
+
+    
 }
 
 @media screen and (max-width:381px) {
     #contato-cabecalho{
-        font-size: 9px;
-        margin-right: 5%;
+        font-size: 7px;
+        margin-right: 14%;
     }   
 
     #footer-btn{
-        margin-left: 20%;       
+        margin-left: 23%;
+        font-size: 20px;       
+    }
+
+    footer{
+        height: 600px;
+    }
+
+    #form-heading{
+        font-size: 18px;
+    }
+
+    #div-name, #div-email, #message{
+        font-size: 12px;
+    }
+
+    #name, #email{
+        width: 60%;
     }
 }
 
  @media screen and (min-width:1440px) {
     section, footer{
-        height: 1000px;
+        height: 1200px;
+    }
+
+    #textarea{
+        width: 150%;
+    }
+    .btn{
+        font-size: 42px;
+    }
+
+    #footer-btn{
+        font-size: 32px;
     }
  }
 
